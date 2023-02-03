@@ -34,10 +34,7 @@
     "parserOptions": {
         "ecmaVersion": "latest",
         "sourceType": "module",
-        "tsconfigRootDir": "__dirname",
-        "project": [
-            "./tsconfig.json"
-        ],
+        "project": "./tsconfig.json",
         "extraFileExtensions": [
             ".svelte"
         ]
@@ -48,7 +45,9 @@
             {
                 "endOfLine": "auto"
             }
-        ]
+        ],
+        "@typescript-eslint/prefer-nullish-coalescing": "off",
+        "@typescript-eslint/strict-boolean-expressions": "off"
     },
     "plugins": [
         "svelte3",
@@ -62,9 +61,7 @@
         "jest.config.cjs",
         "jest.setup.ts",
         "vite.config.ts",
-        "__mocks__/**"
-    ],
-    "globals": {
-        "__dirname": true
-    }
+        "__mocks__/**",
+        "svelte.config.js"
+    ]
 }
