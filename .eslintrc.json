@@ -62,6 +62,7 @@
         "jest.setup.ts",
         "vite.config.ts",
         "__mocks__/**",
-        "svelte.config.js"
+        "svelte.config.js",
+        "tailwind.config.cjs"
     ]
 }
