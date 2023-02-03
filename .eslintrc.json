@@ -1,7 +1,7 @@
 {
     "env": {
         "browser": true,
-        "es2021": true
+        "es2021": true,
     },
     "extends": [
         "standard-with-typescript",
@@ -63,5 +63,8 @@
         "jest.setup.ts",
         "vite.config.ts",
         "__mocks__/**"
-    ]
+    ],
+    "globals": {
+        "__dirname": true
+    }
 }
